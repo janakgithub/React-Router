@@ -5,15 +5,16 @@ import { NavLink } from 'react-router-dom';
 
    const navLinkStyles = ({isActive}) =>{
         return{
-            'text-decoration': isActive ? 'none':'',
-            'font-weight': isActive ? 'bold': ''
+            textDecoration: isActive ? 'none':'',
+            fontWeight: isActive ? 'bold': ''
         }
     }
 
     return (
-        <nav>
+        <nav className='main-nav'>
             <NavLink style={navLinkStyles} to='/'>Home</NavLink>
             <NavLink style={navLinkStyles} to='/about'>About</NavLink>
+            <NavLink style={navLinkStyles} to='/products'>Products</NavLink>
         </nav>
     )
 }
