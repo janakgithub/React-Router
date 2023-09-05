@@ -18,6 +18,7 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='order-confirm' element={<OrderConfirmation/>} />
             <Route path='products' element={<Products/>  }>
+                <Route index element={<FeaturedProducts />} />
                 <Route path='feature' element={<FeaturedProducts/>} />
                 <Route path='new' element={<NewProducts/>} />
             </Route>
